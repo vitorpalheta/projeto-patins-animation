@@ -49,6 +49,7 @@ section.hero{
       &.buy{
         padding: 1.5rem 3rem;
         background-color: var(--snitap-sun);
+        justify-content: center;
       }
 
       &.play span{
@@ -256,6 +257,7 @@ section.hero{
     & .buttons{
       flex-direction: row;
       margin-bottom: 0;
+      gap: 2rem;
     }
   }
 }
