@@ -1,18 +1,15 @@
 section.hero{
-  max-width: 80rem;
   width: 100%;
-  padding: 2.5rem 2rem;
-  margin-inline: auto;
-
+  padding: 1rem 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   overflow: hidden;
+  gap: 2rem;
 
   & h1 div{
     display: inline-block;
     overflow: hidden;
-    height: 5rem;
+    height: 2.5rem;
     width: min-content;
     vertical-align: bottom;
   }
@@ -30,15 +27,16 @@ section.hero{
 
   & h1 span{
     display: block;
-
     animation: slideUp 5s 2s infinite ease;
   }
 
   /* buttons */
   & .buttons{
     display: flex;
-    gap: 2rem;
-    margin-top: 3rem;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    margin-block: 3rem;
+    border: 1px solid violet;
 
     & .button{
       display: flex;
@@ -78,12 +76,16 @@ section.hero{
     }
   }
 
+  & > div:nth-child(1){
+    width: 19.5rem;
+    
+  }
+
   /* patins */
   & > div:nth-child(2){
     display: block;
-    width: 100%;
-    max-width: 30.5rem;
-    height: 30.5rem;
+    width: 19.5rem;
+    height: 19.5rem;
 
     
 
@@ -223,5 +225,37 @@ section.hero{
 
   100% {
     transform: translateY(-15rem);
+  }
+}
+
+@media (width >= 80em){
+  section.hero{
+    max-width: 80rem;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    flex-direction: row;
+    align-items: center;
+
+    & h1 div{
+      height: 5rem;
+    }
+    
+
+    & > div:nth-child(1){
+      width: 100%;
+      width: 43.5rem;
+    }
+
+    & > div:nth-child(2){
+    display: block;
+    width: 100%;
+    width: 30.5rem;
+    height: 30.5rem;
+    
+    }
+    & .buttons{
+      flex-direction: row;
+      margin-bottom: 0;
+    }
   }
 }
