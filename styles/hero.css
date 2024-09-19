@@ -36,7 +36,6 @@ section.hero{
     flex-direction: column-reverse;
     gap: 1.5rem;
     margin-block: 3rem;
-    border: 1px solid violet;
 
     & .button{
       display: flex;
@@ -232,6 +231,7 @@ section.hero{
   section.hero{
     max-width: 80rem;
     width: 100%;
+    margin: auto;
     padding: 2.5rem 2rem;
     flex-direction: row;
     align-items: center;
